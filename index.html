@@ -34,7 +34,7 @@
                         <select id="selector">
                             <option value="/add">suma</option>
                             <option value="/minus">resta</option>
-                            <option value="/multiply">mult</option>
+                            <option value="/mult">mult</option>
                             <option value="/div">div</option>
                         </select>
                         <button type="submit" class="btn btn-primary" id="btnsubmit">Submit</button>
@@ -60,8 +60,8 @@
                         method: "POST",
                         contentType: "application/json",
                         data: JSON.stringify({
-                            "operador1": op1,
-                            "operador2": op2
+                            "op1": op1,
+                            "op2": op2
                         }),
                         success: function(data){
                             $("#resultado").html("resultado: "+data.result);
